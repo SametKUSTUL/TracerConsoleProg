@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TracerConsoleProg", "TracerConsoleProg\TracerConsoleProg.csproj", "{6AC28191-1FA8-42C9-AE66-D62CBF1E76FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6AC28191-1FA8-42C9-AE66-D62CBF1E76FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AC28191-1FA8-42C9-AE66-D62CBF1E76FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AC28191-1FA8-42C9-AE66-D62CBF1E76FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AC28191-1FA8-42C9-AE66-D62CBF1E76FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {78937D7A-2783-4C24-879E-F6FBD03C8119}
+	EndGlobalSection
+EndGlobal
