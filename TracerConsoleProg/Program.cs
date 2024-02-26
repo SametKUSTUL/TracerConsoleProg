@@ -12,7 +12,7 @@ using var traceProvider = Sdk.CreateTracerProviderBuilder()
     {
         configure.AddService("Email.sender.app", serviceVersion: "1.0.0")
         .AddAttributes(new List<KeyValuePair<string, object>> { new("environment", "dev") });
-    }).AddConsoleExporter().Build();
+    }).AddConsoleExporter().AddOtlpExporter().Build();
 
 using var traceProvider2 = Sdk.CreateTracerProviderBuilder()
     .AddSource("EmailSenderActivitySourceToWriteFile")
@@ -20,7 +20,7 @@ using var traceProvider2 = Sdk.CreateTracerProviderBuilder()
     {
         configure.AddService("EmailWrite.sender.app", serviceVersion: "1.0.0")
         .AddAttributes(new List<KeyValuePair<string, object>> { new("environment", "dev") });
-    }).AddConsoleExporter().Build();
+    }).AddConsoleExporter().AddOtlpExporter().Build();
 
 
 
@@ -35,7 +35,7 @@ ActivitySource.AddActivityListener(new ActivityListener()
 
 
 var httpService = new HttpService();
-//await httpService.MakeRequestToGoogle();
+await httpService.MakeRequestToGoogle();
 
 await httpService.MakeRequestToAmazon();
 

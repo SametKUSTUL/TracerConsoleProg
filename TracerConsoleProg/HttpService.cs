@@ -28,6 +28,8 @@ namespace TracerConsoleProg
                 var response = await _httpClient.GetAsync("https://www.google.com");
                 var content = await response.Content.ReadAsStringAsync();
 
+               
+
                 activity.AddTag("content.lenght", content.Length);
                 activity.AddTag("user.id", 23);
                 activity.AddTag("http.schema", "https");
